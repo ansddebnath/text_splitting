@@ -14,7 +14,7 @@ defaults:
   layout: default
 hideInToc: true
 transition: slide-left
-background: ./images/background.jpg
+background: /images/background.jpg
 layout: cover
 mdc: true
 ---
@@ -354,7 +354,7 @@ Another approach for handling long texts is to break them into smaller, manageab
 layout: cover
 title: Different chunking methods
 level: 1
-background: ./images/background.jpg
+background: /images/background.jpg
 ---
 
 # Different chunking methods
@@ -697,7 +697,8 @@ Evaluation across various chunking strategies to illustrate the trade-offs betwe
 
 ---
 layout: cover
-background: ./images/background.jpg
+background: /images/background.jpg
 ---
+
 
 <h1 class="font-bold !text-[60px]">Thank you</h1>
