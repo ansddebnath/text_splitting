@@ -14,7 +14,7 @@ defaults:
   layout: default
 hideInToc: true
 transition: slide-left
-background: https://github.com/ansddebnath/text_splitting/blob/main/images/background.jpg
+background: https://images.unsplash.com/photo-1673526759327-54f1f5b27322?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 layout: cover
 mdc: true
 ---
@@ -354,7 +354,7 @@ Another approach for handling long texts is to break them into smaller, manageab
 layout: cover
 title: Different chunking methods
 level: 1
-background: https://github.com/ansddebnath/text_splitting/blob/main/images/background.jpg
+background: https://images.unsplash.com/photo-1673526759327-54f1f5b27322?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 # Different chunking methods
@@ -697,7 +697,7 @@ Evaluation across various chunking strategies to illustrate the trade-offs betwe
 
 ---
 layout: cover
-background: https://github.com/ansddebnath/text_splitting/blob/main/images/background.jpg
+background: https://images.unsplash.com/photo-1673526759327-54f1f5b27322?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 
