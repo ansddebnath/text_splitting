@@ -14,7 +14,7 @@ defaults:
   layout: default
 hideInToc: true
 transition: slide-left
-background: /images/background.jpg
+background: ./images/background.jpg
 layout: cover
 mdc: true
 ---
