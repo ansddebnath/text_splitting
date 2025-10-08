@@ -528,6 +528,7 @@ Move beyond static or token-based chunking with adaptive, context-aware methods.
 * **Overlapping:** Adds small context overlap between chunks to prevent meaning loss.  
 * **Semantic Chunking:** Uses embeddings to split text based on meaning, not token count.  
 * **Agentic Chunking:** Dynamically adapts chunking to the task or agent’s reasoning needs.
+* **Late Chunking:** Split text only when needed, triggered by context limits or specific tasks—enabling dynamic, adaptive segmentation.
 
 </div>
 
@@ -543,16 +544,12 @@ Move beyond static or token-based chunking with adaptive, context-aware methods.
 * Semantic chunking uses embeddings (e.g., OpenAI, SBERT)
 * Agentic chunking uses task-aware logic to dynamically adjust boundaries
 
-</div>
-
-::bottom::
-<div v-click='3'>
-
 ## Key takeaway:
 * Start simple (approximation, ratio)
 * Use direct token slicing for precision
 * Add overlap and semantics for natural flow
 * Employ agentic methods for adaptive, intelligent chunking
+
 </div>
 
 ---
@@ -645,6 +642,83 @@ level: 2
 <div class="w-full h-[95%] overflow-hidden justify-center bg-gray-100 rounded-2">
   <iframe 
     src="https://python.langchain.com/docs/how_to/semantic-chunker/#__palette=2"
+    class="rounded-2 origin-top-left"
+    style="transform: scale(0.6); width: 166.67%; height: 166.67%;"
+  ></iframe>
+</div>
+
+---
+layout: two-cols-header
+title: Agentic chunking
+level: 2
+---
+
+# Agentic chunking
+
+::left::
+* Agentic chunking dynamically adapts how text is split based on the specific needs of the task, agent, or downstream reasoning process.
+* Instead of static rules, chunk boundaries are determined by agent logic, context, or workflow requirements.
+
+<div v-click='1'>
+
+## Benefits
+* Enables flexible, task-driven segmentation
+* Adapts chunking to agent goals and reasoning steps
+* Supports complex workflows and multi-stage processing
+</div>
+
+<div v-click='2'>
+
+## Key Takeaway
+* Agentic chunking empowers agents to control segmentation,
+* Allowing intelligent, context-aware chunking for advanced applications,
+* Since LLM is used for this, the cost is very high.
+</div>
+
+::right::
+
+<div class="w-full h-[95%] overflow-hidden justify-center bg-gray-100 rounded-2">
+  <iframe 
+    src="https://valanor.co/what-is-agentic-chunking/"
+    class="rounded-2 origin-top-left"
+    style="transform: scale(0.6); width: 166.67%; height: 166.67%;"
+  ></iframe>
+</div>
+
+---
+layout: two-cols-header
+title: Late chunking
+level: 2
+---
+
+# Late chunking
+
+::left::
+* Late chunking defers splitting text until it is absolutely necessary—typically triggered by context window limits or specific downstream tasks.
+* Instead of pre-chunking, the system processes as much as possible in a single pass, chunking only when required for model input or retrieval.
+
+<div v-click='1'>
+
+## Benefits
+* Maximizes context available to the model
+* Reduces unnecessary fragmentation
+* Adapts chunking to real-time needs and model constraints
+
+</div>
+
+<div v-click='2'>
+
+## Key Takeaway
+* Late chunking is ideal for dynamic, streaming, or interactive applications,
+* Allowing flexible segmentation that responds to context and task requirements.
+
+</div>
+
+::right::
+
+<div class="w-full h-[95%] overflow-hidden justify-center bg-gray-100 rounded-2">
+  <iframe 
+    src="https://jina.ai/news/late-chunking-in-long-context-embedding-models/"
     class="rounded-2 origin-top-left"
     style="transform: scale(0.6); width: 166.67%; height: 166.67%;"
   ></iframe>
