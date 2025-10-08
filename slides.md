@@ -744,7 +744,8 @@ Evaluation across various chunking strategies to illustrate the trade-offs betwe
 | Direct Token | **100%** | Low |
 | Overlapping | 100% | High |
 | Semantic Boundary | 98% | **Very High** |
-
+| Agentic | 95% | Very High |
+| Late Chunking | 100% | High |
 </v-click>
 
 ::right::
@@ -757,15 +758,11 @@ Evaluation across various chunking strategies to illustrate the trade-offs betwe
 * Approximate/Ratio methods are fast for quick tasks.
 * Token-based methods scale well with document size.
 
-</v-click>
-
-::bottom::
-<v-click>
-
 ## Summary Insight
 * Choose precision when accuracy matters,  
 * choose semantics when context matters,  
-* combine both for adaptive, intelligent chunking.
+* combine both for adaptive, intelligent chunking,
+* Both agentic and late chunking uses LLM so it's not cost effective.
 
 </v-click>
 
