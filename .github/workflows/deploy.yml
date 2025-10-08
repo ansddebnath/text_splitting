@@ -24,7 +24,7 @@ jobs:
         run: npm install -D playwright-chromium
 
       - name: Build
-        run: slidev build --base /text_splitting --spa
+        run: slidev build --base /text_splitting
 
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2
