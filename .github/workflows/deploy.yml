@@ -24,18 +24,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
+          cache: 'npm'
 
-      - name: Setup @antfu/ni
-        run: npm i -g @antfu/ni
-
-      - name: Install dependencies
-        run: nci
+      - name: Clean install dependencies
+        run: |
+          rm -rf node_modules package-lock.json yarn.lock
+          npm install
+          npm install @rollup/rollup-linux-x64-gnu --save-dev
 
       - name: Install for PDF
         run: npm install -D playwright-chromium
 
       - name: Build
-        run: nr build --base /${{github.event.repository.name}}/ --spa
+        run: npm run build -- --base /${{github.event.repository.name}}/ --spa
 
       - name: Export PDF
         run: npx slidev export --output dist/slides.pdf
