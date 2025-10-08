@@ -36,7 +36,7 @@ jobs:
         run: npm install -D playwright-chromium
 
       - name: Build
-        run: npm run build -- --base /${{github.event.repository.name}} --spa
+        run: npm run build --base /${{github.event.repository.name}}
 
       - name: Export PDF
         run: npx slidev export --output dist/slides.pdf
