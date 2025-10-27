@@ -737,15 +737,18 @@ level: 2
 
 Evaluation across various chunking strategies to illustrate the trade-offs between accuracy, and contextual coherence in large-scale text segmentation.
 
-| Method | Token Accuracy | Context Retention |
+| Method | Token Accuracy |
+|--------|----------------|
+| Approximate | 60% |
+| Ratio-Based | 85% |
+| Direct Token | **100%** |
+
+| Method | Type | Context Retention |
 |--------|----------------|-------------------|
-| Approximate | 60% | Low |
-| Ratio-Based | 85% | Medium |
-| Direct Token | **100%** | Low |
-| Overlapping | 100% | High |
-| Semantic Boundary | 98% | **Very High** |
-| Agentic | 95% | Very High |
-| Late Chunking | 100% | High |
+| Overlapping | Static | Medium |
+| Semantic Boundary | Static | **Very High** |
+| Agentic | Dynamic | Very High |
+| Late Chunking | Dynamic | Very High |
 </v-click>
 
 ::right::
